@@ -1,0 +1,133 @@
+body{
+  background-color:#d0d4d6ce;
+  line-height: 1.4em;
+}
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+  margin:0.3em 0;
+}
+
+a{
+  text-decoration: none;
+  color:blue;
+}
+.wrapper{
+  padding:1.5em;
+}
+.text-center{
+  text-align: center;
+}
+.template-selection{
+  text-align:center;
+}
+.container{
+  display:grid;
+  grid-gap:1.03em;
+  grid-template-columns: repeat(3,1fr);
+}
+.CV-template{
+  margin:auto;
+  margin-top:2em;
+  padding:2em;
+  width:87%;
+  background-color: white;
+  border-radius:3px;
+  box-shadow:1px 2px 10px 2px;
+  min-height: 53em;
+}
+.CV-template:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition:linear 0.3s;
+}
+
+.CV-template-1 .user-education-details,.CV-template-1.user-work-history{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1em;
+}
+
+.CV-template-1 .skill-list{
+  list-style-type:symbols('') 
+}
+
+.CV-template-2{
+  padding:0;
+}
+.CV-template-2 .user-basic-info{
+  background-color:#211F22;
+  padding:2em;
+  color:white;
+}
+.text-orange{
+  border-bottom: 2px  solid #F59E5F;
+  color:#F59E5F;
+  padding-bottom:0.2em;
+}
+
+.CV-template-3{
+  padding:0;
+  display: flex;
+  line-height:1.5em;
+}
+.CV-template-2 .user-education-details{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1em;
+}
+.CV-template-2 .user-work-history{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1em;
+}
+.left-container{
+  padding:0.3em;
+  background-color:#1f1f1f;
+  color:#BCBEB0;
+  overflow:auto;
+}
+.right-container{
+  padding:1em;
+
+}
+.CV-template-3 img{
+  width:100%;
+}
+.CV-template-4{
+  color:#292929
+}
+.CV-template-4 .user-details{
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top:1.2em;
+}
+.CV-template-4 .user-education-details{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1em;
+}
+.CV-template-4 .user-work-history{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:1em;
+}
+
+@media(max-width:620px){
+  .container{
+    display:inline-block;
+    
+  }
+  .CV-template{
+    width:75%;
+  }
+}
+@media(max-width:1366px){
+  .container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
